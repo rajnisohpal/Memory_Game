@@ -1,0 +1,121 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="game.js"></script>
+
+</script>
+<title>game</title>
+</head>
+    <style>
+    button
+        {
+            height:35px;
+            width:170px;
+            border:1px solid #ff0000;
+            border-radius: 5px;
+        }
+		.randimg
+		{
+
+		margin-left:3px;
+		height:60px;
+		width:60px;
+
+		}
+        .preimg
+        {
+		margin-left:3px;
+		height:60px;
+		width:60px;
+		}
+
+        .blnkimg
+        {
+            height:65px;
+            width:65px;
+
+            background: #ff0000;
+        }
+        .noimg
+        {
+            opacity: 0;
+        }
+        .showimg
+        {
+            /*visibility: visible;*/
+            display: block;
+        }
+        .hideimg
+        {
+            /*visibility: hidden;*/
+            display: none;
+        }
+    </style>
+<body bgcolor="#3D679F">
+<table>
+<tr>
+<td>
+<img src="a.png" class="preimg">
+<img src="b.png" class="preimg">
+<img src="c.png" class="preimg">
+<img src="d.png" class="preimg">
+</td>
+    <td><h2>Pairs</h2></td>
+<td><h2 style="color:#ffffff;">Seconds Elapsed: <label id="time"></label></h2></td>
+</tr>
+<tr>
+<td>
+<img src="e.png" class="preimg">
+<img src="f.png" class="preimg">
+<img src="g.png" class="preimg">
+<img src="h.png" class="preimg">
+</td>
+<td><input type="text" id="pairs" /></td>
+<td></td>
+</tr>
+    <tr>
+    <td>
+       <table>
+        <tr>
+            <td><img src="blank.jpg" class="randimg" id="x0"></td>
+            <td><img src="blank.jpg" class="randimg" id="x1"></td>
+            <td><img src="blank.jpg" class="randimg" id="x2"></td>
+            <td><img src="blank.jpg" class="randimg" id="x3"></td>
+        </tr>
+           <tr>
+            <td><img src="blank.jpg" class="randimg" id="x4"></td>
+            <td><img src="blank.jpg" class="randimg" id="x5"></td>
+            <td><img src="blank.jpg" class="randimg" id="x6"></td>
+            <td><img src="blank.jpg" class="randimg" id="x7"></td>
+        </tr>
+           <tr>
+            <td><img src="blank.jpg" class="randimg" id="x8"></td>
+            <td><img src="blank.jpg" class="randimg" id="x9"></td>
+            <td><img src="blank.jpg" class="randimg" id="x10"></td>
+            <td><img src="blank.jpg" class="randimg" id="x11"></td>
+        </tr>
+           <tr>
+            <td><img src="blank.jpg" class="randimg" id="x12"></td>
+            <td><img src="blank.jpg" class="randimg" id="x13"></td>
+            <td><img src="blank.jpg" class="randimg" id="x14"></td>
+            <td><img src="blank.jpg" class="randimg" id="x15"></td>
+        </tr>
+        </table>
+    </td>
+        <td>
+        <h2>Temps</h2><br>
+        <input type="text" id="temps" /><br>
+            <h2> Points</h2><br>
+            <input type="text" id="points" />
+        </td>
+        <td>
+        <button type="button" id="btnnew" style="margin:10px;height: 80px;width:120px" >New Game</button>
+            <br>
+            <input type="submit" id="quit" value="Quit" style="margin:10px;height: 80px;width:120px"/>
+        </td>
+    </tr>
+    </table>
+
+
+    </body>
+</html>
